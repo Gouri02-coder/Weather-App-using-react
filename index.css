@@ -1,0 +1,51 @@
+.weather-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    margin: 0%;
+    margin-bottom: 0%;
+    padding: 0;
+    background-color: rgb(184, 184, 219);
+    background-size: cover;
+
+   
+}
+
+.weather-box{
+    display: flex;
+    max-width: 400px;
+    height: 50%;
+    height: auto;
+    padding: 20px;
+    border-radius: 15px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: auto;
+    box-shadow: 0 0 10px lab(33.13% 31.25 -29.54 / 0.5);
+    background-color: rgb(103, 103, 194);
+}
+
+.weather-container h1{
+    color: white;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+.weather-container p{
+    color: white;
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+.input{
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    font-size: 40px;}

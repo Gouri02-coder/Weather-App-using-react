@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather App</title>
+
+  <!-- ✅ CSP: blocks inline & eval, safe for production -->
+<meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';">
+
+  <link rel="stylesheet" href="./index.css" />
+</head>
+<body>
+  <main class="weather-container">
+    <div class="weather-box">
+      <h1>Weather App</h1>
+      <p>Enter a city name to get the current weather.</p>
+
+      <form id="weatherForm">
+        <div class="form-group">
+          <label for="city">Enter city name:</label>
+          <input type="text" id="city" name="city" required />
+          <button type="submit">Get Weather</button>
+        </div>
+      </form>
+
+      <div id="temp-div"></div>
+      <div id="weather-info"></div>
+      <div id="hourly-forecast"></div>
+      <img id="weather-icon" style="display: none;" alt="Weather Icon" />
+    </div>
+  </main>
+  
+  <script src="./app.js"></script>
+</body>
+</html>
