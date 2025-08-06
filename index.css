@@ -1,51 +1,87 @@
-.weather-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    margin: 0%;
-    margin-bottom: 0%;
-    padding: 0;
-    background-color: rgb(184, 184, 219);
-    background-size: cover;
-
-   
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
 }
 
-.weather-box{
-    display: flex;
-    max-width: 400px;
-    height: 50%;
-    height: auto;
-    padding: 20px;
-    border-radius: 15px;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
-    margin-top: auto;
-    box-shadow: 0 0 10px lab(33.13% 31.25 -29.54 / 0.5);
-    background-color: rgb(103, 103, 194);
+body, html {
+  height: 100%;
+  width: 100%;
 }
 
-.weather-container h1{
-    color: white;
-    font-size: 2.5rem;
-    margin-bottom: 20px;
+.weather-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(to right, #bc85d7, #8b5cb9);
+  padding: 20px;
 }
-.weather-container p{
-    color: white;
-    font-size: 1.2rem;
-    margin: 10px 0;
+
+.weather-box {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  padding: 30px;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 420px;
+  color: white;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  text-align: center;
 }
-.input{
-    width: 100%;
-    padding: 10px;
-    border-radius: 5px;
-    border: none;
-    margin-bottom: 20px;
-    box-sizing: border-box;
-    font-size: 40px;}
+
+.weather-box h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.weather-box p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+#city {
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  font-size: 16px;
+  outline: none;
+  width: 100%;
+}
+
+button {
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  background-color: #ffffff;
+  color: #4b2c6c;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #e6e6e6;
+}
+
+#temp-div, #weather-info, #hourly-forecast {
+  margin-top: 20px;
+  text-align: left;
+  color: white;
+  font-size: 1rem;
+}
+
+
+#weather-icon {
+  width: 80px;
+  margin: 15px auto;
+  display: block;
+}

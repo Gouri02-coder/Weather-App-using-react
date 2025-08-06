@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Weather App</title>
 
-  <!-- ✅ CSP: blocks inline & eval, safe for production -->
-<meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';">
+  <!-- ✅ CSP safe for inline-free JS -->
+  <meta http-equiv="Content-Security-Policy" content="script-src 'self';">
 
   <link rel="stylesheet" href="./index.css" />
 </head>
@@ -18,19 +18,18 @@
 
       <form id="weatherForm">
         <div class="form-group">
-          <label for="city">Enter city name:</label>
-          <input type="text" id="city" name="city" required />
+          <input type="text" id="city" name="city" placeholder="e.g. Mumbai" required />
           <button type="submit">Get Weather</button>
         </div>
       </form>
 
+      <img id="weather-icon" style="display: none;" alt="Weather Icon" />
       <div id="temp-div"></div>
       <div id="weather-info"></div>
       <div id="hourly-forecast"></div>
-      <img id="weather-icon" style="display: none;" alt="Weather Icon" />
     </div>
   </main>
-  
+
   <script src="./app.js"></script>
 </body>
 </html>
